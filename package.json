@@ -1,0 +1,23 @@
+{
+  "name": "bech32-local-backend",
+  "version": "1.0.0",
+  "description": "Windows-local Bech32/Bech32m API and CLI backend",
+  "main": "dist/src/index.js",
+  "scripts": {
+  "build": "tsc -p tsconfig.json",
+  "start": "node --experimental-sqlite dist/src/index.js",
+  "dev": "node --experimental-sqlite --import tsx src/index.ts",
+  "cli": "node --experimental-sqlite --import tsx src/cli.ts",
+  "demo": "node --experimental-sqlite --import tsx src/cli.ts demo",
+  "test": "node --experimental-sqlite --import tsx --test tests/*.test.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
