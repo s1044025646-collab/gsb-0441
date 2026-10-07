@@ -1,0 +1,18 @@
+{
+  "name": "bech32-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bech32/Bech32m 双变体离线编解码与填充位核验后端（API + CLI + SQLite）",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "tsc -p tsconfig.test.json && node --test \"dist-test/test/*.test.js\"",
+    "start": "node dist/server.js",
+    "cli": "node dist/cli.js",
+    "demo": "node dist/demo.js"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "typescript": "*"
+  }
+}
